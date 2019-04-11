@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:background="#fbf8e4"
+    android:stretchColumns="0,3">
+
+    <TableRow
+        android:id="@+id/tablePng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView />
+
+        <TextView />
+
+        <TextView
+            android:id="@+id/textPng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/pig" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="请输入姓名"
+            android:inputType="textPersonName" />
+
+        <TextView />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablePwd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView />
+
+        <TextView
+            android:id="@+id/textPwd"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="密码" />
+
+        <EditText
+            android:id="@+id/editPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录" />
+
+        <TextView />
+    </TableRow>
+</TableLayout>

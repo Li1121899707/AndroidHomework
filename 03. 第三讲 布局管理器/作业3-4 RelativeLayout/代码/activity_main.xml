@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg2_1"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="按角色开始游戏"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBtnCenter"
+            android:src="@drawable/d1"
+            android:layout_centerInParent="true"
+           />
+        <!--上-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBtnTop"
+            android:src="@drawable/d2"
+            android:layout_above="@+id/imgBtnCenter"
+            android:layout_alignLeft="@+id/imgBtnCenter" />
+
+        <!--下-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/d3"
+            android:layout_below="@+id/imgBtnCenter"
+            android:layout_alignLeft="@+id/imgBtnCenter"
+            android:id="@+id/imgBtnBottom"/>
+
+        <!--左-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgBtnCenter"
+            android:layout_alignTop="@+id/imgBtnCenter"
+            android:src="@drawable/d4"
+            android:id="@+id/imgBtnLeft"/>
+
+        <!--右-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBtnCenter"
+            android:layout_alignTop="@+id/imgBtnCenter"
+            android:src="@drawable/d5"
+            android:id="@+id/imgBtnRight"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
