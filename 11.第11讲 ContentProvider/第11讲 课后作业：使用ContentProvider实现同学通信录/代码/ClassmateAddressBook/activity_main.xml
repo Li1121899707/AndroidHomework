@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="仅用于验证是否使用Resolver添加成功！"/>
+
+    <ListView
+        android:id="@+id/lvClassmates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#80000000"
+        android:dividerHeight="1px">
+    </ListView>
+
+
+</LinearLayout>
+
